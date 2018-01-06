@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+  <script>
+    const env = process.env.NODE_ENV;
+
+    const script = [];
+    if('development' === env) {
+      const localhost = `http://localhost:1213`;
+      script.push(`${localhost}/bundle.js`)
+    }else {
+      
+    }
+
+    document.write(
+      script.map(url => `<script src="${url}"></script`).join('')
+    )
+  </script>
+</html>
