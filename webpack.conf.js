@@ -40,6 +40,8 @@ module.exports = {
   resolve: {
     alias: {
       components: path.resolve(__dirname, './app/components'),
+      asset: path.resolve(__dirname, './app/asset'),
+      store: path.resolve(__dirname, './app/store'),
     },
     extensions: [ '.js', '.jsx', '.css'],
   },
