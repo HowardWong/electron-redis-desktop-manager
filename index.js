@@ -1,5 +1,6 @@
 const electron = require('electron')
 const env = process.env.NODE_ENV;
+
 // Module to control application life.
 const app = electron.app
 // Module to create native browser window.
